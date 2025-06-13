@@ -1,5 +1,7 @@
 # RJD Parser [Resume - Job Description Parser]
 
+![UI Screenshot 1](images/ui1.png)
+
 A modern, full-stack application that matches resumes to job descriptions using advanced NLP/ML techniques. Features include:
 - Resume and JD upload/input
 - Entity and skill extraction (spaCy, fuzzy matching)
@@ -44,10 +46,14 @@ A modern, full-stack application that matches resumes to job descriptions using 
   ```
 - Open [http://localhost:3000](http://localhost:3000)
 
+![UI Screenshot 2](images/ui2.png)
+
 ## Usage
 1. Upload your resume (PDF/DOCX) and paste the job description.
 2. Click "Analyze Resume & JD" to see the match results, strengths, missing skills, recommendations, and a skill comparison table.
 3. Click "Generate PDF Report" to download a detailed, structured report (with skill table).
+
+![Generated Report Example](images/report.png)
 
 ## Notes
 - PDF report uses ASCII ("Yes"/"No") for skill table to avoid Unicode issues.
@@ -62,6 +68,3 @@ A modern, full-stack application that matches resumes to job descriptions using 
 ## Project Structure
 - `backend/` - FastAPI app, ML pipeline, PDF/report logic
 - `frontend/` - Next.js app, UI/UX
-
----
-For detailed explanation, see `explanation.md` in the project root.
